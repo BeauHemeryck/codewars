@@ -4,7 +4,6 @@ function firstNonRepeatingLetter(s) {
         return s
     }
     
-    
     return "";
 }
 
