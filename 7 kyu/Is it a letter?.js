@@ -1,3 +1,5 @@
 function isItLetter(character) {
-    return isNaN(Number(character)) ? true : false;
+    return character.match(/[a-z]/gi) ? true : false;
 }
+
+console.log(isItLetter("["))
