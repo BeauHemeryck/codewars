@@ -31,5 +31,3 @@ function contact(hallway) {
     return -1;
 }
 
-// Example usage:
-console.log(contact("->--------<-"));  // Output: 2
