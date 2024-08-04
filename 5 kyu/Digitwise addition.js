@@ -17,3 +17,23 @@ function digitwiseAddition(N, K) {
 }
 
 console.log(digitwiseAddition(9812, 25));
+// const MOD = 10**9 + 7;
+
+// function digitwiseAddition(n, k) {
+//     // Initialize the digits array with zeros
+//     let digits = Array(10).fill(0);
+
+//     // Count occurrences of each digit in the number
+//     for (const digit of n.toString()) {
+//         digits[parseInt(digit, 10)] += 1;
+//     }
+
+//     // Perform the digit-wise addition as described
+//     for (let i = 0; i < k; i++) {
+//         let idx = (-i % 10 + 10) % 10; // Ensure index is non-negative
+//         digits[idx] = (digits[idx] + digits[(idx - 1 + 10) % 10]) % MOD;
+//     }
+
+//     // Return the sum of digits modulo MOD
+//     return digits.reduce((sum, value) => (sum + value) % MOD, 0);
+// }
