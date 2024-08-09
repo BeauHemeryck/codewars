@@ -1,22 +1,67 @@
+// function digitwiseAddition(N, K) {
+//     let numberSplitArray = String(N).split("");
+//     for (let i = 0; i < K; i++) {
+//         tempArray = [];
+//         let length = numberSplitArray.length
+//         for (let j = 0; j < length; j++) {    
+//         let number = Number(numberSplitArray[j]) + 1;
+//             if (number > 9) {
+//                 tempArray.push(1, 0)
+//             } else {
+//                 tempArray.push(number);
+//             }
+//         }
+//         numberSplitArray = tempArray;
+//     }
+//     return numberSplitArray.length % 1_000_000_007;
+// }
+
 function digitwiseAddition(N, K) {
-    let numberSplitArray = String(N).split("");
-    for (let i = 0; i < K; i++) {
-        tempArray = [];
-        let length = numberSplitArray.length
-        for (let j = 0; j < length; j++) {    
-        let number = Number(numberSplitArray[j]) + 1;
-            if (number > 9) {
-                tempArray.push(1, 0)
-            } else {
-                tempArray.push(number);
-            }
-        }
-        numberSplitArray = tempArray;
+    let NumberArray = Array(10).fill(0);
+
+    for (const number of N.toString()) {
+        NumberArray[parseInt(number, 10)] += 1;
     }
-    return numberSplitArray.length % 1_000_000_007;
+
+    for (let i = 0; i < K; i++) {
+        
+    }
 }
 
-console.log(digitwiseAddition(9812, 25));
+console.log(digitwiseAddition(123567, 2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const MOD = 10**9 + 7;
 
 // function digitwiseAddition(n, k) {

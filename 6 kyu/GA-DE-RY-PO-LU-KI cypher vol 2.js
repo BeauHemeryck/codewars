@@ -9,7 +9,7 @@ function encode(str, key) {
             keyCollection[key[i].toUpperCase()] = key[i + 1].toUpperCase();
         }
     }
-
+    
     return str
         .split("")
         .map((char) => {

@@ -1,20 +1,9 @@
 function factorialDivision(n, d) {
-    if (calculateFactorial(n) == Number.POSITIVE_INFINITY || calculateFactorial(d) == Number.POSITIVE_INFINITY) {
-        if (n > d) {
-            return n
-        } else {
-            return d
-        }
+    let result = BigInt(1);
+    for (let i = d + 1; i <= n; i++) {
+        result *= BigInt(i);
     }
-    return calculateFactorial(n) / calculateFactorial(d);
-}
-
-function calculateFactorial(n) {
-    let ans = 1;
-    for (let i = 2; i <= n; i++) {
-        ans *= i;
-    }
-    return ans;
+    return result;
 }
 
 
